@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="inicio.css">
 </head>
+
 <body>
-    <div id="div_header">
+    <div id="cabecalho" class="header">
         <ul>
             <li><a href="">Início</a></li>
             <li><a href="">Sobre nós</a></li>
@@ -18,7 +20,7 @@
             <li><a href="">Diretoria</a></li>
 
         </ul>
-<a  href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
+        <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
         <ul>
             <li><a href="">Estatística</a></li>
             <li><a href="">Programação</a></li>
@@ -26,38 +28,84 @@
             <li><a href="">Acessar</a></li>
         </ul>
     </div>
-    <div id="div_banner">
+
+    <div id="div_banner" class="banner">
         <h1>Seja bem-vindo ao site da Federação de UPAs de Santo André !</h1>
     </div>
-    <div id="div_quemSomos">
-        <div id="div_esquerda">
-            <h1>Quem somos?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ex repellat numquam laboriosam voluptatum facilis quo eos a iusto perferendis voluptates sequi, explicabo minus nemo suscipit aperiam ipsa necessitatibus adipisci?Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempore est accusantium voluptates pariatur. Sit culpa veritatis sunt veniam similique perspiciatis eius ipsa hic eligendi. Accusamus ea non ullam odit.</p>
-            <button onclick="maisSobre()">Mais sobre!</button>
+
+    <section id="sec_quemSomos" class="who">
+        <div id="div_container">
+            <div id="div_esquerda">
+                <h1>Quem somos?</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ex repellat numquam laboriosam
+                    voluptatum facilis quo eos a iusto perferendis voluptates sequi, explicabo minus nemo suscipit
+                    aperiam ipsa necessitatibus adipisci?Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                    tempore est accusantium voluptates pariatur. Sit culpa veritatis sunt veniam similique perspiciatis
+                    eius ipsa hic eligendi. Accusamus ea non ullam odit.</p>
+                <button onclick="maisSobre()">Mais sobre!</button>
+            </div>
+            <div id="div_direita">
+                <img
+                    src="https://static.vecteezy.com/ti/vetor-gratis/p1/2676554-pessoas-juntas-diversidade-pessoas-amizade-grupo-homens-e-mulheres-personagens-de-desenhos-animados-gratis-vetor.jpg">
+                <br>
+                <a href="">Site oficial da UPA</a>
+            </div>
         </div>
-        <div id="div_direita">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2676554-pessoas-juntas-diversidade-pessoas-amizade-grupo-homens-e-mulheres-personagens-de-desenhos-animados-gratis-vetor.jpg"> <br>
-            <a href="">Site oficial da UPA</a>
-        </div>
-    </div>
-    <div id="div_estatistica">
+        
+    </section>
+    <section id="sec_metricas" class="estatistica">
         <ul>
-            <div id="div_nUpas">
+            <div id="div_nUpas" class="metricaDados">
                 <p>Número de UPAs :</p>
-                <li>Oi</li>
+                <li>10</li>
             </div>
-            <div id="div_nUpas">
+            <div id="div_nSocio" class="metricaDados">
                 <p>Número de sócios :</p>
-                <li>Oi</li>
+                <li>80</li>
             </div>
-            <div id="div_nUpas">
+            <div id="div_FaixaEt" class="metricaDados">
                 <p>Faixa etária:</p>
-                <li>Oi</li>
+                <li>12 - 18</li>
             </div>
-    
-            
         </ul>
-    </div>
+        <br>
+        <ul>
+            <div id="div_nUpas" class="metricaDados">
+                <p>Nº Atividades(gerais) :</p>
+                <li>30</li>
+            </div>
+            <div id="div_nSocio" class="metricaDados">
+                <p>Nº Atividades(Fed.): </p>
+                <li>4</li>
+            </div>
+            <div id="div_FaixaEt" class="metricaDados">
+                <p>Relatório Final :</p>
+                <li>9/10</li>
+            </div>
+        </ul>
+    </section>
+
+    <section id="sec_diretoria">
+        <div id="div_titulo">
+            <h1>Diretoria da Federação</h1>
+        </div>
+        <div id="div_cargos">
+            <ul>
+                <li>    
+                    <img src="https://static.wikia.nocookie.net/naruto/images/3/33/Naruto_Uzumaki_%28Parte_I_-_HD%29.png/revision/latest/scale-to-width-down/1200?cb=20160316113315&path-prefix=pt-br">
+                    ssdasdaskdals <br>
+                    sdlasdaslçdasçd,ls
+                </li>
+                <li>    
+                    <img src="">
+                    ssdasdaskdals <br>
+                    sdlasdaslçdasçd,ls
+                </li>
+            </ul>
+        </div>
+        
+    </section>
 
 </body>
+
 </html>
