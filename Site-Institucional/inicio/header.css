@@ -1,9 +1,13 @@
 .header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    /*border: 1px black solid;*/
+    position: fixed;
+    background-color: white;
+
+    border: 1px black solid
 }
 
 .header img {
@@ -25,12 +29,9 @@
 }
 
 
-li:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
-}
 
-li:hover a{
+
+.header li:hover a{
     color: red;
 }
 

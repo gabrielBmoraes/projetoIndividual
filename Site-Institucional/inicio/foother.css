@@ -1,0 +1,35 @@
+#div_foother{
+    width: 100%;
+    background-color: #262626;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#div_foother h1{
+    color: white;
+}
+
+#div_linha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#div_linha img{
+    width: 100px;
+}
+
+#div_linha ul {
+   
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+a{
+    color: rgb(109, 106, 106);
+}
