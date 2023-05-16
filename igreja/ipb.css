@@ -1,0 +1,108 @@
+/* Config. geral */
+h1 {
+    color: #025A12;
+}
+
+p {
+    color: black;
+    text-align: justify;
+}
+
+
+
+
+/* Inicio banner */
+
+#div_banner {
+    display: flex;
+    background-color: #025A12;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_banner h1{
+    color: white;
+}
+
+#div_banner img{
+    width: 100px;
+    margin-right: 50px;
+}
+
+/* Fim banner */
+
+/* Inicio "O que é a IPB"? */
+
+#div_oQueé {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    
+}
+
+#div_oQueé a{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #025A12;
+    
+}
+
+#div_texto {
+    width: 500px;
+}
+
+#div_doutrinas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #025A12;
+    border-radius: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+#div_doutrinas p  {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Final "o que é?" */
+
+/* Inicio história */
+
+#div_historia {
+    margin-top: 50px;
+}
+
+/* Final história */
+
+/* Inicio Bio */
+#div_bio {
+    display: flex;  
+    background-color: #025A12;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#div_bio h1{
+    color: white;
+}
+
+#div_bio p {
+    color: antiquewhite;
+}
+
+#div_bio img{
+    width: 80%;
+    padding: 20px;
+}
+
+/* Final bio */
