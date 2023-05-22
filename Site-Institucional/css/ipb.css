@@ -61,12 +61,13 @@ p {
     flex-direction: column;
     justify-content: center;
     width: 400px;
-    height: 200px;
+    height: 240px;
     background-color: #025A12;
     border-radius: 40px;
     padding: 40px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0px;
     
 }
 
@@ -98,7 +99,8 @@ p {
     align-items: center;
     margin-top: 50px;
     margin-left: 2.5%;
-    margin-right: 2.5%; 
+    margin-right: 2.5%;
+    padding: 10px; 
 }
 
 #div_bio h1{

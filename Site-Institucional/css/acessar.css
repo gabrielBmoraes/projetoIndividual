@@ -1,0 +1,35 @@
+
+
+
+#div_acessar{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(101, 95, 95, 0.3);
+}
+
+.login{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.login p {
+    width: 200px;
+    text-align: center;
+}
+
+.login input {
+    width: 500px;
+}
+
+#div_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
