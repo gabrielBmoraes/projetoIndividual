@@ -6,7 +6,6 @@
     padding: 10px;
     position: fixed;
     background-color: white;
-
     border: 1px black solid
 }
 
@@ -34,4 +33,12 @@
 .header li:hover a{
     color: red;
 }
+
+#div_preenchimento {
+    background-color: #262626;
+    color: #262626;
+    width: 100%;
+    height: 100px;
+}
+
 

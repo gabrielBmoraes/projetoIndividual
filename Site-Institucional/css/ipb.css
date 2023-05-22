@@ -13,18 +13,21 @@ p {
 
 /* Inicio banner */
 
-#div_banner {
-    display: flex;
+.banner {
+    width: 100%;
+    height: 200px;
     background-color: #025A12;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
 }
 
-#div_banner h1{
+.banner h1{
     color: white;
 }
 
-#div_banner img{
+.banner img{
     width: 100px;
     margin-right: 50px;
 }
@@ -57,13 +60,13 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 200px;
+    width: 400px;
     height: 200px;
     background-color: #025A12;
     border-radius: 40px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
     
 }
 
@@ -72,6 +75,8 @@ p {
     justify-content: center;
     color: white;
     text-decoration: underline;
+    font-size: 35px;
+    margin-top: -35px;
 }
 
 /* Final "o que é?" */
@@ -80,6 +85,8 @@ p {
 
 #div_historia {
     margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 /* Final história */
@@ -90,6 +97,8 @@ p {
     background-color: #025A12;
     align-items: center;
     margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%; 
 }
 
 #div_bio h1{
@@ -98,11 +107,13 @@ p {
 
 #div_bio p {
     color: antiquewhite;
+    margin-right: 2.5%;
 }
 
 #div_bio img{
     width: 80%;
     padding: 20px;
+    
 }
 
 /* Final bio */
