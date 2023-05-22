@@ -1,0 +1,206 @@
+
+/* Inicio do banner */
+
+#div_preenchimento {
+    background-color: #262626;
+    color: #262626;
+    width: 100%;
+    height: 100px;
+}
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+
+.banner h1 {
+    color: white;
+}
+/* Final do banner */
+
+
+
+/* Inicio do Sobre nós */
+.who {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+#div_container {
+    width: 100%;
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
+
+#div_direita  {
+    width: 500px;
+}
+
+#div_direita img{
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+}
+
+#div_esquerda {
+    width: 500px;
+}
+
+#div_esquerda p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Final do Quem Somos */
+
+
+.estatistica {
+    width: auto;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.estatistica ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.estatistica li {
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    
+
+}
+
+.metricaDados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.estatistica p {
+    margin-bottom: 0;
+    width: 150px;
+}
+/* Final do estatística */
+
+/* Começo da Diretoria */
+#div_diretoria {
+    width: 100%;
+    text-align: start;
+}
+
+#div_diretoria ul{
+    margin: 0;
+    padding: 0;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div_diretoria li {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: start;
+}
+
+
+#sec_diretoria h1 {
+    margin-left: 100px;
+}
+
+
+li img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+li  p {
+    margin: 0;
+}
+
+li b {
+    color: red;
+}
+/* Final da Diretoria */
+
+
+/* Inicio Contato */
+
+#sec_contato{
+    margin-top: 100px;
+}
+
+#div_contFundo {
+display: flex;
+justify-content: center;
+    }
+#div_contato {
+    width: 1000px;
+    background-color: #262626;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+#div_contato ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+#div_contato p{
+    color: white;
+    
+}
+
+#div_contato h1{
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contatoMensagem {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#mensagem{
+    width: 400px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.textoPermissao{
+    width: 50%;
+}
+
+#contButton{
+    width: 100px;
+    border-radius: 40px;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
