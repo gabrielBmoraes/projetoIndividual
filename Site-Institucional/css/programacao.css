@@ -1,3 +1,11 @@
+h2{
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+
+
 #div_calendario{
     display: flex;
     justify-content: center;
@@ -15,7 +23,7 @@
 .programacao{
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 100px;
     align-items: center;
 }
 
@@ -24,5 +32,6 @@
 }
 
 .texto{
-    width: 50%;
+    width: 30%;
+    text-align: justify;
 }

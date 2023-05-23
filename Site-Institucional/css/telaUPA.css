@@ -1,0 +1,42 @@
+#div_diretoria {
+    width: 100%;
+    text-align: start;
+}
+
+#div_diretoria ul{
+    margin: 0;
+    padding: 0;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div_diretoria li {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: start;
+}
+
+
+#sec_diretoria h1 {
+    margin-left: 100px;
+}
+
+
+li img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+li  p {
+    margin: 0;
+}
+
+li b {
+    color: red;
+}
+/* Final da Diretoria */
