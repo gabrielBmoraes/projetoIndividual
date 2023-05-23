@@ -1,0 +1,28 @@
+#div_calendario{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px black  ;
+}
+
+
+
+#div_calendario img{
+    width: 500px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.programacao{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+}
+
+.programacao img{
+    width: 200px;
+}
+
+.texto{
+    width: 50%;
+}
