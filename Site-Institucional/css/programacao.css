@@ -39,10 +39,15 @@ h2{
     text-align: justify;
 }
 
-select {
+.programacao select {
     padding: 0;
     margin: 0;
     width: auto;
+}
+
+h1 select{
+    width: 100px;
+    justify-content: flex-end;
 }
 
 b{

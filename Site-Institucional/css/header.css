@@ -43,14 +43,17 @@
 }
 
 select {
-    text-align: start;
     width: 110px;
     margin-bottom: 20px;
     margin: auto;
     border: none;
+    cursor: pointer;
 }
 
-.centro {
+
+.centralizar{
+    display: flex;
+    justify-content: center;
     text-align: center;
     
 }
