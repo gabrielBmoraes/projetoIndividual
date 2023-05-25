@@ -1,42 +1,31 @@
-#div_diretoria {
-    width: 100%;
-    text-align: start;
-}
-
-#div_diretoria ul{
-    margin: 0;
-    padding: 0;
-    display: flex ;
-    justify-content: space-around;
+#div_download {
+    width: auto;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 200px;
     align-items: center;
 }
 
-#div_diretoria li {
-    width: 300px;
-    margin: 10px;
+#div_download ul {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
     align-items: center;
+}
+
+#div_download li {
+    color: white;
+    width: 200px;
+    padding: 10px;
     text-decoration: none;
-    justify-content: start;
+    
 }
 
+#div_download p {
+    text-align: center;
+    background-color: #262626;
+    padding: 20px;
 
-#sec_diretoria h1 {
-    margin-left: 100px;
 }
-
-
-li img{
-    width: 100px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-li  p {
-    margin: 0;
-}
-
-li b {
-    color: red;
-}
-/* Final da Diretoria */

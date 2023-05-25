@@ -10,33 +10,50 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/inicio.css">
     <link rel="stylesheet" href="../css/foother.css">
+    <link rel="stylesheet" href="../js/inicio.js">
 </head>
 
 <body>
     <div id="cabecalho" class="header">
         <ul>
-            <li><a href="">Início</a></li>
-            <li><a href="">Sobre nós</a><select name="" id="">
-                <!-- <option value=""></option>
-                <option value="">A UPA</option>
-                <option value="">A IPB</option> -->
-            </select></li>
-            <li><a href="">Nossas UPAs</a> <select name="" id=""></select></li>
-            <li><a href="">Diretoria</a></li>
+            <li><a href="../html/inicio.html">Início</a></li>
+            <li><select name="" id="">
+                    <option selected disabled value="" class="centro">Sobre nós</option>
+                    <option value="1"> Sobre a IPB</option>
+                    <option value="2">Sobre a UPA</option>
+                </select></li>
+            <li><select name="" id="">
+                    <option selected disabled value="" class="centro">Nossas UPAs</option>
+                    <option value="1">IPB - Betel</option>
+                    <option value="2">IPB - Jardim Elba</option>
+                    <option value="3">IPB - Jardim Itapuan</option>
+                    <!-- <option value="4">IPB - Jardim Monções</option> -->
+                    <option value="5">IPB - Maranata</option>
+                    <option value="6">IPB - Mauá</option>
+                    <option value="4">IPB - Monte Moriá</option>
+                    <option value="4">IPB - Parque das Nações</option>
+                    <option value="4">IPB - Primeira de Santo André</option>
+                    <option value="4">IPB - Parque Erasmo</option>
+                    <option value="4">IPB - Ribeirão Pires</option>
+                    <option value="4">IPB - Jardim Monções</option>
+                    <!-- <option value="4">IPB - Vila Suiça</option> -->
+
+
+
+
+                </select></li>
+            <li><a href="#sec_diretoria">Diretoria</a></li>
 
         </ul>
-        <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
+        <a href="../html/inicio.html"><img src="../img/UPA-Logotipo-Oficial.png"></a>
         <ul>
-            <li><a href="">Estatística</a></li>
-            <li><a href="">Programação</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="">Acessar</a></li>
+            <li><a href="#sec_metricas">Estatística</a></li>
+            <li><a href="../html/programacao.html">Programação</a></li>
+            <li><a href="#sec_contato">Contato</a></li>
+            <li><a href="../html/acessar.html">Acessar</a></li>
         </ul>
     </div>
 
-    <div id="div_preenchimento">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe quidem neque minus voluptatem. Ab explicabo quaerat perferendis architecto magnam optio tenetur molestiae assumenda aut labore. Quisquam iusto sunt eos!
-    </div>
 
     <div id="div_banner" class="banner">
         <h1>Seja bem-vindo ao site da Federação de UPAs de Santo André !</h1>
@@ -54,10 +71,9 @@
                 <button onclick="maisSobre()">Mais sobre!</button>
             </div>
             <div id="div_direita">
-                <img
-                    src="https://static.vecteezy.com/ti/vetor-gratis/p1/2676554-pessoas-juntas-diversidade-pessoas-amizade-grupo-homens-e-mulheres-personagens-de-desenhos-animados-gratis-vetor.jpg">
+                <img src="../img/adolecentes-ot.png">
                 <br>
-                <a href="">Site oficial da UPA</a>
+                <a href="https://upa.org.br/">Site oficial da UPA</a>
             </div>
         </div>
 
@@ -95,7 +111,9 @@
     </section>
 
     <section id="sec_diretoria">
-        <h1>Diretoria da Federação <select><option value="">2023</option></select></h1> 
+        <h1>Diretoria da Federação <select>
+                <option value="">2023</option>
+            </select></h1>
         <div id="div_diretoria">
 
             <ul>
@@ -106,30 +124,30 @@
                 <li>
                     <img
                         src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                    <p><b>Vice-presidente</b><br>Gabriel B. Moraes</p>
+                    <p><b>Vice-presidente</b><br>Raissa</p>
                 </li>
             </ul>
 
             <ul>
                 <li>
                     <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                    <p><b>1ºSecretário</b><br>Gabriel B. Moraes</p>
+                    <p><b>1ºSecretário</b><br>Nicolas</p>
                 </li>
                 <li>
                     <img
                         src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                    <p><b>2ºSecretário</b><br>Gabriel B. Moraes</p>
+                    <p><b>2ºSecretário</b><br> Arthur</p>
                 </li>
             </ul>
             <ul>
                 <li>
                     <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                    <p><b>Secretário-executivo</b><br>Gabriel B. Moraes</p>
+                    <p><b>Secretário-executivo</b><br>Bianca</p>
                 </li>
                 <li>
                     <img
                         src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                    <p><b>Tesoureiro</b><br>Gabriel B. Moraes</p>
+                    <p><b>Tesoureiro</b><br>Ester</p>
                 </li>
             </ul>
             <ul>
@@ -153,10 +171,10 @@
                 <ul>
                     <li class="contatoMensagem"><input id="mensagem" placeholder="Digite aqui a sua mensagem."></li>
                     <li class="contatoMensagem" id="textoPermissao">
-                        <p>Estou ciente e aceito que os meus dados, fornecidos neste formulário, sejam utilizados apenas
+                        <p><input type="checkbox">Estou ciente e aceito que os meus dados, fornecidos neste formulário, sejam utilizados apenas
                             com
                             a finalidade de me identificar e retornar o contato.</p> <button onclick="enviar()"
-                            id="contButton">Enviar</button>
+                            id="enviar">Enviar</button>
                     </li>
                 </ul>
             </div>
@@ -169,15 +187,19 @@
         <div id="div_linha">
             <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
             <ul>
-                <li><a href="">Início</a></li>
+                <li><a href="../html/inicio.html">Início</a></li>
                 <li>|</li>
-                <li><a href="">Programação</a></li>
+                <li><a href="./programacao.html">Programação</a></li>
                 <li>|</li>
-                <li><a href="">Acessar</a></li>
+                <li><a href="../html/acessar.html">Acessar</a></li>
             </ul>
-           <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a> 
+            <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
         </div>
     </div>
+
+</body>
+
+</body>
 
 </body>
 

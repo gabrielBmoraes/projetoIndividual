@@ -1,12 +1,7 @@
 
 /* Inicio do banner */
 
-#div_preenchimento {
-    background-color: #262626;
-    color: #262626;
-    width: 100%;
-    height: 100px;
-}
+
 .banner {
     width: 100%;
     height: 200px;
@@ -44,7 +39,7 @@ text-align: center;
 
 #div_direita img{
     height: 200px;
-    width: 400px;
+    width: auto;
     margin: 20px;
 }
 
@@ -81,7 +76,6 @@ text-align: center;
     width: 100%;
     padding: 10px;
     text-decoration: none;
-    
 
 }
 
@@ -101,6 +95,11 @@ text-align: center;
 #div_diretoria {
     width: 100%;
     text-align: start;
+}
+
+ h1 select{
+    width: 100px;
+    justify-content: flex-end;
 }
 
 #div_diretoria ul{
@@ -196,7 +195,7 @@ justify-content: center;
     width: 50%;
 }
 
-#contButton{
+#enviar{
     width: 100px;
     border-radius: 40px;
     padding: 20px;

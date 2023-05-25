@@ -1,0 +1,39 @@
+.header {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px black solid
+}
+
+.header img {
+    width: 200px;
+    height: 100px;
+}
+
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.header li:hover a{
+    color: red;
+}
+
+
+
+
