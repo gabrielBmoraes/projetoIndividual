@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/inicio.css">
     <link rel="stylesheet" href="../css/foother.css">
     <link rel="stylesheet" href="../js/inicio.js">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -37,11 +39,10 @@
                     <option value="4">IPB - Ribeirão Pires</option>
                     <option value="4">IPB - Jardim Monções</option>
                     <!-- <option value="4">IPB - Vila Suiça</option> -->
-
-
-
-
                 </select></li>
+
+
+
             <li><a href="#sec_diretoria">Diretoria</a></li>
 
         </ul>
@@ -76,10 +77,73 @@
                 <a href="https://upa.org.br/">Site oficial da UPA</a>
             </div>
         </div>
-
     </section>
     <section id="sec_metricas" class="estatistica">
-        <ul>
+        <div class="container">
+            <div class="grafico">
+                <h1>Oi</h1>
+                <canvas id="myChart"></canvas>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+        <script>
+
+
+            const ctx = document.getElementById('myChart');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 60, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+
+            const ctx2 = document.getElementById('myChart2');
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 60, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+        <!-- <ul>
             <div id="div_nUpas" class="metricaDados">
                 <p>Número de UPAs :</p>
                 <li>10</li>
@@ -108,94 +172,95 @@
                 <li>9/10</li>
             </div>
         </ul>
-    </section>
+    </section> -->
 
-    <section id="sec_diretoria">
-        <h1>Diretoria da Federação <select>
-                <option value="">2023</option>
-            </select></h1>
-        <div id="div_diretoria">
+        <section id="sec_diretoria">
+            <h1>Diretoria da Federação <select>
+                    <option value="">2023</option>
+                </select></h1>
+            <div id="div_diretoria">
 
-            <ul>
-                <li>
-                    <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                    <p><b>Presidente</b><br>Gabriel B. Moraes <br> vestdobranco@gmail.com</p>
-                </li>
-                <li>
-                    <img
-                        src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                    <p><b>Vice-presidente</b><br>Raissa</p>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                    <p><b>1ºSecretário</b><br>Nicolas</p>
-                </li>
-                <li>
-                    <img
-                        src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                    <p><b>2ºSecretário</b><br> Arthur</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                    <p><b>Secretário-executivo</b><br>Bianca</p>
-                </li>
-                <li>
-                    <img
-                        src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                    <p><b>Tesoureiro</b><br>Ester</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                    <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section id="sec_contato">
-        <div id="div_contFundo">
-
-            <div id="div_contato">
-                <h1>Entrar em contato</h1>
                 <ul>
-                    <li><input id="ipt_nome" placeholder="NOME"></li>
-                    <li><input id="ipt_email" placeholder="E-MAIL"></li>
-                    <li><input id="ipt_telefone" placeholder="TELEFONE"></li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Presidente</b><br>Gabriel B. Moraes <br> vestdobranco@gmail.com</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Vice-presidente</b><br>Raissa</p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>1ºSecretário</b><br>Nicolas</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>2ºSecretário</b><br> Arthur</p>
+                    </li>
                 </ul>
                 <ul>
-                    <li class="contatoMensagem"><input id="mensagem" placeholder="Digite aqui a sua mensagem."></li>
-                    <li class="contatoMensagem" id="textoPermissao">
-                        <p><input type="checkbox">Estou ciente e aceito que os meus dados, fornecidos neste formulário, sejam utilizados apenas
-                            com
-                            a finalidade de me identificar e retornar o contato.</p> <button onclick="enviar()"
-                            id="enviar">Enviar</button>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-executivo</b><br>Bianca</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Tesoureiro</b><br>Ester</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
-    <div id="div_foother">
-        <h1>Federação da União de UPAs de Santo André</h1>
+        </section>
+        <section id="sec_contato">
+            <div id="div_contFundo">
+
+                <div id="div_contato">
+                    <h1>Entrar em contato</h1>
+                    <ul>
+                        <li><input id="ipt_nome" placeholder="NOME"></li>
+                        <li><input id="ipt_email" placeholder="E-MAIL"></li>
+                        <li><input id="ipt_telefone" placeholder="TELEFONE"></li>
+                    </ul>
+                    <ul>
+                        <li class="contatoMensagem"><input id="mensagem" placeholder="Digite aqui a sua mensagem."></li>
+                        <li class="contatoMensagem" id="textoPermissao">
+                            <p><input type="checkbox">Estou ciente e aceito que os meus dados, fornecidos neste
+                                formulário, sejam utilizados apenas
+                                com
+                                a finalidade de me identificar e retornar o contato.</p> <button onclick="enviar()"
+                                id="enviar">Enviar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="div_foother">
+            <h1>Federação da União de UPAs de Santo André</h1>
 
 
-        <div id="div_linha">
-            <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
-            <ul>
-                <li><a href="../html/inicio.html">Início</a></li>
-                <li>|</li>
-                <li><a href="./programacao.html">Programação</a></li>
-                <li>|</li>
-                <li><a href="../html/acessar.html">Acessar</a></li>
-            </ul>
-            <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
+            <div id="div_linha">
+                <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
+                <ul>
+                    <li><a href="../html/inicio.html">Início</a></li>
+                    <li>|</li>
+                    <li><a href="./programacao.html">Programação</a></li>
+                    <li>|</li>
+                    <li><a href="../html/acessar.html">Acessar</a></li>
+                </ul>
+                <a href=""><img src="https://logosmarcas.net/wp-content/uploads/2020/08/Coca-Cola-Emblema.png"></a>
+            </div>
         </div>
-    </div>
 
 </body>
 

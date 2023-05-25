@@ -55,7 +55,26 @@ text-align: center;
 
 /* Final do Quem Somos */
 
+/* Inicio Estatistica */
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grafico{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+
+/*
 .estatistica {
     width: auto;
     height: 100px;
@@ -89,7 +108,7 @@ text-align: center;
 .estatistica p {
     margin-bottom: 0;
     width: 150px;
-}
+} */
 /* Final do estatística */
 
 /* Começo da Diretoria */
