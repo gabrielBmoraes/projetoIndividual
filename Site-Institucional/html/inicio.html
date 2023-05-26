@@ -79,19 +79,34 @@
         </div>
     </section>
     <section id="sec_metricas" class="estatistica">
-        <div class="container">
-            <div class="grafico">
-                <h1>Oi</h1>
-                <canvas id="myChart"></canvas>
-                <canvas id="myChart2"></canvas>
+        <div>
+
+            <div class="container">
+                <div>
+                    <h1 class="textoFundo">Número de atividades/mês</h1>
+                </div>
+                <div >
+                    <h1 class="textoFundo">Quantidade de sócios/ano</h1>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="grafico">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="grafico">
+                    <canvas id="myChart2"></canvas>
+                </div>
             </div>
         </div>
+
         <script>
 
 
             const ctx = document.getElementById('myChart');
             new Chart(ctx, {
-                type: 'pie',
+                type: 'line',
                 data: {
                     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                     datasets: [{
@@ -129,18 +144,6 @@
                     }
                 }
             });
-
-
-
-
-
-
-
-
-
-
-
-
 
         </script>
         <!-- <ul>

@@ -1,7 +1,4 @@
-
-
 /* Inicio do banner */
-
 
 .banner {
     width: 100%;
@@ -57,58 +54,37 @@ text-align: center;
 
 /* Inicio Estatistica */
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.grafico{
+.container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+grafico{
+    display: flex;
+    width: 500px;   
+    align-items: center;
+}
+
+#myChart{
     width: 500px;
-    height: 500px;
+}
+
+#myChart2{
+    width: 500px;
 }
 
 
 
-
-
-
-/*
-.estatistica {
-    width: auto;
-    height: 100px;
-    margin-top: 100px;
-    margin-bottom: 200px;
-}
-
-.estatistica ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 50px;
-}
-
-.estatistica li {
+.textoFundo{
+    text-align: center;
     background-color: #262626;
     color: white;
     width: 100%;
     padding: 10px;
-    text-decoration: none;
-
+    /* text-decoration: none;*/
 }
 
-.metricaDados{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.estatistica p {
-    margin-bottom: 0;
-    width: 150px;
-} */
 /* Final do estatística */
 
 /* Começo da Diretoria */
