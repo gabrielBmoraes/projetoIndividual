@@ -54,6 +54,12 @@ text-align: center;
 
 /* Inicio Estatistica */
 
+
+.estatistica {
+margin-top: 50px;
+
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -109,12 +115,28 @@ grafico{
     align-items: center;
     text-decoration: none;
     justify-content: start;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px black;
 }
 
+#sec_diretoria {
+    margin-top: 100px;
+}
+
+#sec_diretoria select {
+    width: 60px;
+    text-align: start;
+}
+    
 
 #sec_diretoria h1 {
     margin-left: 100px;
+    margin-top: 100px;
+    font-size: x-large;
 }
+
 
 
 li img{

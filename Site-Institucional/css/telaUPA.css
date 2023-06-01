@@ -1,31 +1,135 @@
-#div_download {
-    width: auto;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: 200px;
+.header {
+    width: 100%;
+    display: flex;
     align-items: center;
+    padding-top: 10px;
+    /* position: fixed; */
+    background-color: white;
+    border-bottom: 1px black solid;
 }
 
-#div_download ul {
+.header img {   
+    width: auto;
+    height: 80px;
+    margin: 10px;
+}
+
+
+.header ul {
+    justify-content: space-between;
     display: flex;
-    justify-content: space-around;
     width: 100%;
     padding: 0;
-    margin-bottom: 50px;
-    align-items: center;
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
 
-#div_download li {
-    color: white;
-    width: 200px;
+h1{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+#div_avisos {
+    width: 90%;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: start;
+}
+
+#div_mensagem {
     padding: 10px;
-    text-decoration: none;
+}
+
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     
 }
 
-#div_download p {
-    text-align: center;
+
+.listaDonwload{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#div_download li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: #262626;
-    padding: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+#documentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#documentacao li{
+    display: flex;
+    justify-content: center;
+}
+
+.docHeader{
+    display: flex;
+    justify-content: space-around;
+    background-color: #262626;
+    color: white;
+    padding: 10px;
+    width: 1000px;
+    align-items: center;
+}
+
+.docComFundo{
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #5c5c5c;
+    color: white;
+    padding: 10px;
+    width: 1000px;
+}
+
+
+.docSemFundo{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    padding: 10px;
+    width: 1000px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.pendente{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.concluido{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 
 }
