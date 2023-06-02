@@ -95,59 +95,35 @@
 
             <div class="container">
                 <div class="grafico">
-                    <canvas id="myChart"></canvas>
+                    <canvas id="myChart" class="tamanho"></canvas>
                 </div>
                 <div class="grafico">
-                    <canvas id="myChart2"></canvas>
+                    <canvas id="myChart2" class="tamanho"></canvas>
                 </div>
             </div>
         </div>
 
-        <script>
+        <div class="container">
+            <div>
+                <h1 class="textoFundo">Número de atividades/mês</h1>
+            </div>
+            <div >
+                <h1 class="textoFundo">Idade dos sócios</h1>
+            </div>
+        </div>
 
 
-            const ctx = document.getElementById('myChart');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 60, 3],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
+        <div class="container">
+            <div class="grafico">
+                <canvas id="myChart3" ></canvas>
+            </div>
+            <div class="grafico">
+                <canvas id="myChart4"></canvas>
+            </div>
+        </div>
+    </div>
 
-
-            const ctx2 = document.getElementById('myChart2');
-            new Chart(ctx2, {
-                type: 'bar',
-                data: {
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 60, 3],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-
-        </script>
+       
         <!-- <ul>
             <div id="div_nUpas" class="metricaDados">
                 <p>Número de UPAs :</p>
@@ -180,6 +156,7 @@
     </section> -->
 
         <section id="sec_diretoria">
+            <div id="div_faixa"></div>
             <h1>Diretoria da Federação <select>
                     <option value="">2023</option>
                 </select></h1>
@@ -274,4 +251,94 @@
 </body>
 
 </html>
+
+<script>
+
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                axis: 'y',
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 60, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+           
+            
+            }
+        }
+    });
+
+    
+
+
+    const ctx2 = document.getElementById('myChart2');
+    new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 60, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx3 = document.getElementById('myChart3');
+    new Chart(ctx3, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 60, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx4 = document.getElementById('myChart4');
+    new Chart(ctx4, {
+        type: 'pie',
+        data: {
+            labels: ['12-15', '15-17', '18'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+</script>
 
