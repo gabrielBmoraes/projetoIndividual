@@ -1,15 +1,26 @@
+#div_container{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
 
+h3{
+    width: 60%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
 
 
 #div_acessar{
     margin-top: 50px;
-    width: 100%;
-    height: 360px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(101, 95, 95, 0.3);
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 #div_logar {
@@ -18,34 +29,46 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 
 .login{
     margin-top: 20px;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     
 }
 
 .login p {
     width: 200px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .login input {
-    width: 500px;
+    width: 300px;
     height: 35px;
+    text-align: center;
+}
+
+.login button {
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
 }
 
 #div_button {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-button{
+#div_button button{
     color: white;
     background-color: red;
     padding: 20px;
@@ -53,13 +76,7 @@ button{
     cursor: pointer;
 }
 
-#div_recuperacao {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-}
 
-#div_recuperacao a {
-text-decoration: none;
-color: black;
+#div_recConcluido {
+    display: none;
 }

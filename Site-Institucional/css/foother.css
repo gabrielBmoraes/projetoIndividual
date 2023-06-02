@@ -4,11 +4,12 @@
     margin-top: 50px;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 #div_foother h1{
     color: white;
+    margin: 0;
 }
 
 #div_linha{

@@ -7,7 +7,7 @@
     <title>Acessar</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/foother.css">
-    <link rel="stylesheet" href="../css/acessar.css">
+    <link rel="stylesheet" href="../css/recSenha.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../js/acessar.js">
 </head>
@@ -36,9 +36,6 @@
                 <option value="4">IPB - Jardim Monções</option>
                 <!-- <option value="4">IPB - Vila Suiça</option> -->
 
-
-
-
             </select></li>
             <li><a href="">Diretoria</a></li>
 
@@ -52,25 +49,23 @@
         </ul>
     </div>
 
-    <div id="div_acessar">
-        <div id="div_logar">
+    <div id="div_container">
+        <div id="div_acessar">
+            <div id="div_logar">
+                <h3>Para redifinir sua senha, informe o email cadastrado da sua conta e lhe enviaremos um link com as instruções.</h3>
+                <div id="div_usuario" class="login">
+                    <p>Email cadastrado:</p> 
+                    <input id="ipt_login">
+                </div>
 
-            <div id="div_usuario" class="login">
-                <p>Email:</p> <input id="ipt_login">
-            </div>
-            <div id="div_senha" class="login">
-                <p>Senha:</p> <input id="ipt_login" type="password">
-            </div>
-            <div id="div_button">
-                <button onclick="entrar()">ENTRAR</button>
+                <div id="div_button">
+                    <button onclick="entrar()">ENTRAR</button>
+                </div>
+                <div id="div_recConcluido"></div>
             </div>
         </div>
     </div>
-    <div id='div_recuperacao'>
-        <a href="../html/recSenha.html">Esqueceu a senha?</a>
-        <a href="">Não possui uma conta?</a>
-    </div>
-
+    
     
     <div id="div_foother">
         <h1>Federação da União de UPAs de Santo André</h1>
