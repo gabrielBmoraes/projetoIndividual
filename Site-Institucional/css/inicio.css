@@ -49,7 +49,14 @@ text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+#maisSobre{
+    width: 100px;
+    border-radius: 40px;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
 /* Final do Quem Somos */
 
 /* Inicio Estatistica */
@@ -110,7 +117,7 @@ margin-top: 50px;
 /* Final do estatística */
 
 /* Começo da Diretoria */
-#div_diretoria {
+.div_diretoria {
     width: 100%;
     text-align: start;
     margin-top: 20px;
@@ -127,7 +134,7 @@ margin-top: 50px;
 } */
 
 
-#div_diretoria ul{
+.div_diretoria ul{
     margin: 0;
     padding: 0;
     display: flex ;
@@ -135,7 +142,7 @@ margin-top: 50px;
     justify-content: start;
 }
 
-#div_diretoria li {
+.div_diretoria li {
     width: 300px;
     height: 130px;
     margin: 10px;
@@ -147,6 +154,10 @@ margin-top: 50px;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 2px 5px black;
+}
+
+#diretoria2022{
+    display: none;
 }
 
 #sec_diretoria {
@@ -222,23 +233,24 @@ justify-content: center;
     text-align: center;
 }
 
-.contatoMensagem {
+ .contatoMensagem {
     display: flex;
     flex-direction: column;
     width: 500px;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 50px; 
 }
 
-#mensagem{
+#ipt_mensagem{
+    resize: none;
     width: 400px;
-    height: 200px;
-    border-radius: 25px;
-}
+    height: 150px;
+    /* border-radius: 20px;     */
+    padding: 10px;
+    border: 1px solid;
+   
+}   
 
-.textoPermissao{
-    width: 50%;
-}
 
 #enviar{
     width: 100px;
@@ -246,5 +258,7 @@ justify-content: center;
     padding: 20px;
     justify-content: center;
     margin-top: 40px;
+    cursor: pointer;
 }
+
 

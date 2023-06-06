@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/inicio.css">
     <link rel="stylesheet" href="../css/foother.css">
-    <link rel="stylesheet" href="../js/inicio.js">
      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
      <script src="../js/header.js"></script>
-    
+    <script src="../js/inicio.js"></script>
 
 </head>
 
@@ -71,7 +70,7 @@
                     aperiam ipsa necessitatibus adipisci?Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                     tempore est accusantium voluptates pariatur. Sit culpa veritatis sunt veniam similique perspiciatis
                     eius ipsa hic eligendi. Accusamus ea non ullam odit.</p>
-                <button onclick="maisSobre()">Mais sobre!</button>
+                <button onclick="maisSobre()" id="maisSobre">Mais sobre!</button>
             </div>
             <div id="div_direita">
                 <img src="../img/adolecentes-ot.png">
@@ -127,10 +126,11 @@
         
         <section id="sec_diretoria">
             <!-- <div id="div_faixa"></div> -->
-            <h1>Diretoria da Federação <select>
-                    <option value="">2023</option>
+            <h1>Diretoria da Federação <select  id="listaAno" onchange="diretoriaAno()">
+                    <option value="1">2023</option>
+                    <option value="2 ">2022</option>
                 </select></h1>
-            <div id="div_diretoria">
+            <div class="div_diretoria" id="diretoria2023">
                 <ul>
                     <li>
                         <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
@@ -174,6 +174,51 @@
                 </ul>
 
             </div>
+
+            <div class="div_diretoria" id="diretoria2022">
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Presidente</b><br>Raissa <br> vestdobranco@gmail.com</p>
+                    </li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>1ºSecretário</b><br>Nicolas</p>
+                    </li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-executivo</b><br>Bianca</p>
+                        
+                    </li>
+                    
+                </ul>
+
+                <ul>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Vice-presidente</b><br>Raissa</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>2ºSecretário</b><br> Arthur</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Tesoureiro</b><br>Ester</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
+                    </li>
+                    
+                </ul>
+            
+            </div>
         </section>
         <section id="sec_contato">
             <div id="div_contFundo">
@@ -186,9 +231,12 @@
                         <li><input id="ipt_telefone" placeholder="TELEFONE"></li>
                     </ul>
                     <ul>
-                        <li class="contatoMensagem"><input id="mensagem" placeholder="Digite aqui a sua mensagem."></li>
+                        <li class="contatoMensagem">
+                            <textarea  id="ipt_mensagem" placeholder="Digite aqui a sua mensagem."></textarea>
+                            <!-- <input id="mensagem" placeholder="Digite aqui a sua mensagem."> -->
+                        </li>
                         <li class="contatoMensagem" id="textoPermissao">
-                            <p><input type="checkbox">Estou ciente e aceito que os meus dados, fornecidos neste
+                            <p><input type="checkbox" id="acordoTermos">Estou ciente e aceito que os meus dados, fornecidos neste
                                 formulário, sejam utilizados apenas
                                 com
                                 a finalidade de me identificar e retornar o contato.</p> <button onclick="enviar()"

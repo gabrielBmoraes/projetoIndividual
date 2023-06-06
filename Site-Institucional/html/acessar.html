@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/acessar.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../js/acessar.js">
+    <script src="../js/acessar.js"></script>
 </head>
 <body>
     <div id="cabecalho" class="header">
@@ -58,14 +59,14 @@
             <div id="div_usuario" class="login">
                 <p>Email:</p> 
                 
-                    <input id="ipt_login"> <br>
+                    <input class="ipt_login" id="ipt_email"> <br>
                    
             </div>
             <div id="div_senha" class="login">
-                <p>Senha:</p> <input id="ipt_login" type="password">
+                <p>Senha:</p> <input class="ipt_login" id="ipt_senha"type="password">
             </div>
             <div id="div_button">
-                <button onclick="entrar()">ENTRAR</button>
+                <button onclick="entrar()" id="entrar">ENTRAR</button>
             </div>
             <div id='div_recuperacao'>
                 <a href="../html/cadastro.html">Não possui uma conta?</a>
