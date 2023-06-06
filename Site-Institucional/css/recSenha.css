@@ -59,6 +59,7 @@ h3{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button{
@@ -72,4 +73,14 @@ button{
 
 #div_recConcluido {
     display: none;
+}
+
+#voltar a{
+    margin-top: 100px;
+    text-decoration: underline;
+    color: black;
+}
+
+#voltar a:hover{
+    color: red;
 }

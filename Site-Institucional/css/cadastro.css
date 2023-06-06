@@ -61,6 +61,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #div_button button{
@@ -78,13 +79,24 @@
 
 img {
     width: 12px;
-    cursor: pointer;
+   
 }
 
-#div_codigo {
-    display: block;
+.hide {
+    display: none;
 }
 
-img:hover #div_codigo{
-    display: flex;
+.imgCodigo:hover .hide{
+    display: block ;
+    cursor: pointer;;
+}
+
+#voltar a{
+    margin-top: 100px;
+    text-decoration: underline;
+    color: black;
+}
+
+#voltar a:hover{
+    color: red;
 }
