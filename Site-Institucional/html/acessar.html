@@ -58,19 +58,25 @@
 
             <div id="div_usuario" class="login">
                 <p>Email:</p> 
-                
-                    <input class="ipt_login" id="ipt_email"> <br>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <input class="ipt_login" id="ipt_email"><br>
+                    <span id="vEmail">Insira um e-mail correto.</span>
+                </div>
                    
             </div>
             <div id="div_senha" class="login">
-                <p>Senha:</p> <input class="ipt_login" id="ipt_senha"type="password">
+                <p>Senha:</p> 
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <input class="ipt_login" id="ipt_senha"type="password"><br>
+                    <span id='vSenha'>Insira uma senha correta.</span>
+                </div>
             </div>
             <div id="div_button">
                 <button onclick="entrar()" id="entrar">ENTRAR</button>
             </div>
             <div id='div_recuperacao'>
                 <a href="../html/cadastro.html">Não possui uma conta?</a>
-                <a href="../html/recSenha.html">Esqueceu a senha?</a>
+                <!-- <a href="../html/recSenha.html">Esqueceu a senha?</a> -->
                
             </div>
         </div>

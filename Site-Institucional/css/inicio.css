@@ -37,7 +37,7 @@ text-align: center;
 
 #div_direita img{
     height: 200px;
-    width: auto;
+    width: 300px;
     margin: 20px;
 }
 
@@ -259,6 +259,27 @@ justify-content: center;
     justify-content: center;
     margin-top: 40px;
     cursor: pointer;
+}
+
+
+.erro span {
+    color: red;
+}
+
+#vNome {
+    display: none;
+}
+
+#vEmail {
+    display: none;
+}
+
+#vTelefone{
+    display: none;
+}
+
+#vBox{
+    display: none;
 }
 
 

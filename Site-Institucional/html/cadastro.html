@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/foother.css">
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../js/acessar.js">
+    <script src="../js/cadastro.js"></script>
 </head>
 <body>
     <div id="cabecalho" class="header">
@@ -55,20 +55,24 @@
                 <H1>CADASTRE-SE</H1>
                 <div id="div_usuario" class="login">
                     <p>Email:</p> 
-                    <input id="ipt_login">
+                    <input id="ipt_email">
+                    <span id="vEmail">Insira um e-mail válido.</span>
                 </div>
                 <div id="div_usuario" class="login" type>
                     <p>Senha:</p> 
-                    <input id="ipt_login" type="password">
+                    <input id="ipt_senha" type="password">
+                    <span id="vSenha">Insira uma senha válida.</span>
                 </div>
                 <div id="div_usuario" class="login">
                     <p>Confirmação de senha:</p> 
-                    <input id="ipt_login" type="password">
+                    <input id="ipt_conferirSenha" type="password">
+                    <span id="vConferirSenha">A senha está diferente.</span>
                 </div>
                 <div id="div_usuario" class="login">
-                    <p>   <img src="../img/icone-de-informacao.png" class="imgCodigo"> Código de cadastro:</p> 
-                    <div class="hide"> O código é fornecido pela Federação</div>
-                    <input id="ipt_login" type="password">
+                    <p>   <img src="../img/icone-de-informacao.png" id="imgCodigo" onmouseover="mensagemCodigoOn()" onmouseout="mensagemCodigoOff()">  Código de cadastro:</p> 
+                    <div id="mensagem"> O código é fornecido pela Federação</div>
+                    <input id="ipt_codigo" type="password">
+                    <span id="vCodigo">O códgio não está correto.</span>
                 </div>
 
                 <div id="div_button">

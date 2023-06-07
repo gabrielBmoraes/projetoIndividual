@@ -65,15 +65,12 @@
         <div id="div_container">
             <div id="div_esquerda">
                 <h1>Quem somos?</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ex repellat numquam laboriosam
-                    voluptatum facilis quo eos a iusto perferendis voluptates sequi, explicabo minus nemo suscipit
-                    aperiam ipsa necessitatibus adipisci?Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                    tempore est accusantium voluptates pariatur. Sit culpa veritatis sunt veniam similique perspiciatis
-                    eius ipsa hic eligendi. Accusamus ea non ullam odit.</p>
+                <p>A Federação da União Presbiteriana de Adolescentes de Santo André (FUSA-Santo André) é uma organização religiosa e juvenil ligada à Igreja Presbiteriana do Brasil. Ela é uma das diversas federações locais espalhadas pelo país que reúnem adolescentes de congregações presbiterianas para atividades e programas específicos.
+                </p>
                 <button onclick="maisSobre()" id="maisSobre">Mais sobre!</button>
             </div>
             <div id="div_direita">
-                <img src="../img/adolecentes-ot.png">
+                <img src="../img/fotoUpa.jpeg">
                 <br>
                 <a href="https://upa.org.br/">Site oficial da UPA</a>
             </div>
@@ -230,6 +227,11 @@
                         <li><input id="ipt_email" placeholder="E-MAIL"></li>
                         <li><input id="ipt_telefone" placeholder="TELEFONE"></li>
                     </ul>
+                    <ul class="erro">
+                        <li><span id="vNome">Insira um nome válido.</span></li>
+                        <li><span id="vEmail">Insira um e-mail válido.</span></li>
+                        <li><span id="vTelefone">Insira um telefone válido.</span></li>
+                    </ul>
                     <ul>
                         <li class="contatoMensagem">
                             <textarea  id="ipt_mensagem" placeholder="Digite aqui a sua mensagem."></textarea>
@@ -237,9 +239,7 @@
                         </li>
                         <li class="contatoMensagem" id="textoPermissao">
                             <p><input type="checkbox" id="acordoTermos">Estou ciente e aceito que os meus dados, fornecidos neste
-                                formulário, sejam utilizados apenas
-                                com
-                                a finalidade de me identificar e retornar o contato.</p> <button onclick="enviar()"
+                                formulário, sejam utilizados apenas com a finalidade de me identificar e retornar o contato. <div class="erro"><span id="vBox">Marque a caixinha para prosseguir</span></div></p>  <button onclick="enviar()"
                                 id="enviar">Enviar</button>
                         </li>
                     </ul>
@@ -323,15 +323,24 @@
 
     const ctx3 = document.getElementById('myChart3');
     new Chart(ctx3, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             datasets: [{
-                label: '# of Votes',
+                label: 'Homem',
                 data: [12, 19, 3, 5, 60, 3],
                 borderWidth: 1
+            }],
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: 'Mulher',
+                data: [11, 18, 2, 3, 40, 13],
+                borderWidth: 2
             }]
         },
+        
+            
+        
         options: {
             scales: {
                 y: {

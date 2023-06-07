@@ -9,7 +9,7 @@
 #div_acessar{
     margin-top: 50px;
     width: 500px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -57,6 +57,26 @@
     cursor: pointer;
 }
 
+.login span{
+    color: red;
+}
+
+#vEmail {
+    display: none;
+}
+
+#vSenha {
+    display: none;
+}
+
+#vConferirSenha {
+    display: none;
+}
+
+#vCodigo {
+    display: none;
+}
+
 #div_button {
     display: flex;
     justify-content: center;
@@ -82,16 +102,15 @@ img {
    
 }
 
-.hide {
-    opacity: 0;
+#imgCodigo:hover{
+    cursor: pointer;
+    
 }
 
-.imgCodigo:hover .hide{
-    
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    opacity: 1;
+#mensagem {
+    display: none;
 }
+
 
 #voltar a{
     margin-top: 100px;

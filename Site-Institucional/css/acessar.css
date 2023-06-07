@@ -26,7 +26,7 @@
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:baseline;
     
 }
 
@@ -40,10 +40,14 @@
     height: 35px;
 }
 
+.login span {
+    color: red;
+}
+
 #div_button {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 button{
@@ -58,7 +62,7 @@ button{
     width: 30%;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #div_recuperacao a {
@@ -70,4 +74,16 @@ color: black;
 
 #div_recuperacao a:hover {
 color: red;
+}
+
+#vEmail {
+    display: none;
+}
+
+.erro  span{
+    color: red;
+}
+
+#vSenha {
+    display: none;
 }
