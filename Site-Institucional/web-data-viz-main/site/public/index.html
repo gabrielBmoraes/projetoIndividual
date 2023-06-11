@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/foother.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div id="cabecalho" class="header">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><select name="" id="listaSobre" onchange="mudarSobre()">
+                    <option selected disabled value="" class="centro">Sobre nós</option>
+                    <option value="1">Sobre a IPB</option>
+                    <option value="2">Sobre a UPA</option>
+                </select></li>
+            <li><select name="" id="">
+                    <option selected disabled value="" class="centro">Nossas UPAs</option>
+                    <option value="1">IPB - Betel</option>
+                    <option value="2">IPB - Jardim Elba</option>
+                    <option value="3">IPB - Jardim Itapuan</option>
+                    <!-- <option value="4">IPB - Jardim Monções</option> -->
+                    <option value="5">IPB - Maranata</option>
+                    <option value="6">IPB - Mauá</option>
+                    <option value="4">IPB - Monte Moriá</option>
+                    <option value="4">IPB - Parque das Nações</option>
+                    <option value="4">IPB - Primeira de Santo André</option>
+                    <option value="4">IPB - Parque Erasmo</option>
+                    <option value="4">IPB - Ribeirão Pires</option>
+                    <option value="4">IPB - Jardim Monções</option>
+                    <!-- <option value="4">IPB - Vila Suiça</option> -->
+                </select></li>
+
+
+
+            <li><a href="#sec_diretoria">Diretoria</a></li>
+
+        </ul>
+        <a href="index.html"><img src="img/UPA-Logotipo-Oficial.png"></a>
+        <ul>
+            <li><a href="#sec_metricas">Estatística</a></li>
+            <li><a href="programacao.html">Programação</a></li>
+            <li><a href="#sec_contato">Contato</a></li>
+            <li><a href="acessar.html">Acessar</a></li>
+        </ul>
+    </div>
+
+
+    <div id="div_banner" class="banner">
+        <h1>Seja bem-vindo ao site da Federação de UPAs de Santo André !</h1>
+    </div>
+
+    <section id="sec_quemSomos" class="who">
+        <div id="div_container">
+            <div id="div_esquerda">
+                <h1>Quem somos?</h1>
+                <p>A Federação da União Presbiteriana de Adolescentes de Santo André (FUSA-Santo André) é uma
+                    organização religiosa e juvenil ligada à Igreja Presbiteriana do Brasil. Ela é uma das diversas
+                    federações locais espalhadas pelo país que reúnem adolescentes de congregações presbiterianas para
+                    atividades e programas específicos.
+                </p>
+                <button onclick="maisSobre()" id="maisSobre">Mais sobre!</button>
+            </div>
+            <div id="div_direita">
+                <img src="img/fotoUpa.jpeg">
+                <br>
+                <a href="https://upa.org.br/">Site oficial da UPA</a>
+            </div>
+        </div>
+    </section>
+    <section id="sec_metricas" class="estatistica">
+        <div>
+
+            <div class="container">
+                <div>
+                    <h1 class="textoFundo">Número de atividades/mês</h1>
+                </div>
+                <div>
+                    <h1 class="textoFundo">Quantidade de sócios/ano</h1>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="grafico">
+                    <canvas id="myChart" class="tamanho"></canvas>
+                </div>
+                <div class="grafico">
+                    <canvas id="myChart2" class="tamanho"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h1 class="textoFundo">Número de atividades/mês</h1>
+            </div>
+            <div>
+                <h1 class="textoFundo">Idade dos sócios</h1>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="grafico">
+                <canvas id="myChart3"></canvas>
+            </div>
+            <div class="grafico">
+                <canvas id="myChart4"></canvas>
+            </div>
+        </div>
+        </div>
+
+
+
+        <section id="sec_diretoria">
+            <!-- <div id="div_faixa"></div> -->
+            <h1>Diretoria da Federação <select id="listaAno" onchange="diretoriaAno()">
+                    <option value="1">2023</option>
+                    <option value="2 ">2022</option>
+                </select></h1>
+            <div class="div_diretoria" id="diretoria2023">
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Presidente</b><br>Gabriel B. Moraes <br> vestdobranco@gmail.com</p>
+                    </li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>1ºSecretário</b><br>Nicolas</p>
+                    </li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-executivo</b><br>Bianca</p>
+
+                    </li>
+
+                </ul>
+
+                <ul>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Vice-presidente</b><br>Raissa</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>2ºSecretário</b><br> Arthur</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Tesoureiro</b><br>Ester</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="div_diretoria" id="diretoria2022">
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Presidente</b><br>Raissa <br> vestdobranco@gmail.com</p>
+                    </li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>1ºSecretário</b><br>Nicolas</p>
+                    </li>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-executivo</b><br>Bianca</p>
+
+                    </li>
+
+                </ul>
+
+                <ul>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Vice-presidente</b><br>Raissa</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>2ºSecretário</b><br> Arthur</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
+                        <p><b>Tesoureiro</b><br>Ester</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
+                        <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+        <section id="sec_contato">
+            <div id="div_contFundo">
+
+                <div id="div_contato">
+                    <h1>Entrar em contato</h1>
+                    <ul>
+                        <li><input id="ipt_nome" placeholder="NOME"></li>
+                        <li><input id="ipt_email" placeholder="E-MAIL"></li>
+                        <li><input id="ipt_telefone" placeholder="TELEFONE"></li>
+                    </ul>
+                    <ul class="erro">
+                        <li><span id="vNome">Insira um nome válido.</span></li>
+                        <li><span id="vEmail">Insira um e-mail válido.</span></li>
+                        <li><span id="vTelefone">Insira um telefone válido.</span></li>
+                    </ul>
+                    <ul>
+                        <li class="contatoMensagem">
+                            <textarea id="ipt_mensagem" placeholder="Digite aqui a sua mensagem."></textarea>
+                            <!-- <input id="mensagem" placeholder="Digite aqui a sua mensagem."> -->
+                        </li>
+                        <li class="contatoMensagem" id="textoPermissao">
+                            <p><input type="checkbox" id="acordoTermos">Estou ciente e aceito que os meus dados,
+                                fornecidos neste
+                                formulário, sejam utilizados apenas com a finalidade de me identificar e retornar o
+                                contato.
+                            <div class="erro"><span id="vBox">Marque a caixinha para prosseguir</span></div>
+                            </p> <button onclick="enviar()" id="enviar">Enviar</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <div id="div_foother">
+            <h1>Federação da União de UPAs de Santo André</h1>
+            <div id="div_linha">
+                <a href=""><img src="img/UPA-Logotipo-Branco.png"></a>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li>|</li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li>|</li>
+                    <li><a href="acessar.html">Acessar</a></li>
+                </ul>
+                <a href=""><img src="img/iconeInstagram (2).png"></a>
+            </div>
+        </div>
+
+</body>
+
+</body>
+
+</body>
+
+</html>
+
+<script>
+
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                axis: 'y',
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 60, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+
+
+            }
+        }
+    });
+
+
+
+
+    const ctx2 = document.getElementById('myChart2');
+    new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 60, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx3 = document.getElementById('myChart3');
+    new Chart(ctx3, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: 'Homem',
+                data: [12, 19, 3, 5, 60, 3],
+                borderWidth: 1
+            }],
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: 'Mulher',
+                data: [11, 18, 2, 3, 40, 13],
+                borderWidth: 2
+            }]
+        },
+
+
+
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx4 = document.getElementById('myChart4');
+    new Chart(ctx4, {
+        type: 'pie',
+        data: {
+            labels: ['12-15', '15-17', '18'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+</script>
