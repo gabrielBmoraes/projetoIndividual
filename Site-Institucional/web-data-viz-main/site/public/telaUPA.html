@@ -25,7 +25,7 @@
         </div>
         <div class="centralizar">
             <div id="div_avisos">
-                <div id="div_mensagem">Nenhum aviso foi encontrado :)</div>
+                <div id="div_avisoMensagem"></div>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
     <div id="documentacao">
         <div>
             <ul class="docHeader">
-                <li>Documentos</li>
+                <li>Ano</li>
                 <li>Situação de entrega</li>
                 <li>Adicionar</li>
                 <li>Status: </li>
@@ -58,10 +58,7 @@
 
         <div>
             <ul class="docComFundo">
-                <li>Relatório final</li>
-                <!-- <li><p class="pendente">Pendente</p></li> -->
-                <input name="nome" id="nome" type="text" />
-                <input name="email" id="email" type="url" />
+                <li><input name="ano" id="ano" type="text" /></li>
                 <li><input name="foto" id="foto" type="file" /></li>
                 <li><button onclick="enviar()">Adicionar arquivo</button></li>
                 <li><div id="div_status" class="pendente">Pendente</div></li>

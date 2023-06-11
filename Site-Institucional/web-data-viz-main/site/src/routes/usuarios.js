@@ -12,6 +12,11 @@ router.post("/autenticar", function (req, res) {
     usuarioController.autenticar(req, res);
 });
 
+router.get("/avisos", function (req, res) {
+  usuarioController.avisos(req, res);
+});
+
+
 router.get("", (req, res) => {
   res.render("telaUPA")
 });

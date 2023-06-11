@@ -26,9 +26,10 @@
       .then(res => {
         res.json().then(json => {
           const usuario = json[0];
+          console.log(json[0])
           container.innerHTML = `<div>
-    <h1>${usuario.nome} - ${usuario.email}</h1>
-    <img src='assets/${usuario.imagem_perfil}' alt="imagem de usuario">
+    <h1>${usuario.ano} </h1>
+    <img src='assets/${usuario.arquivo}' alt="Relatório">
   </div>`
         })
       })

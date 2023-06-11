@@ -38,6 +38,8 @@ function autenticar(req, res) {
 
 }
 
+
+
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var email = req.body.emailServer;
@@ -51,7 +53,7 @@ function cadastrar(req, res) {
     } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar( email, senha)
+        usuarioModel.cadastrar(email, senha)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -71,33 +73,43 @@ function cadastrar(req, res) {
 
 function salvar(req, res) {
     const imagem = req.file.filename;
-  
-    const {nome, email} = req.body
-  
-    const usuario = { nome, email, imagem }
-    
+
+    const { ano } = req.body
+
+    const usuario = { ano, imagem }
+
     usuarioModel.salvar(usuario)
-    .then(resultado => {
-      res.status(201).send("Usuario criado com sucesso");
-    }).catch(err => {
-      res.status(500).send(err);
-    });
-  }
-  
-  function buscarUsuarioPeloId(req, res) {
+        .then(resultado => {
+            res.status(201).send("Usuario criado com sucesso");
+        }).catch(err => {
+            res.status(500).send(err);
+        });
+}
+
+function buscarUsuarioPeloId(req, res) {
     console.log(req.params.id);
     usuarioModel.buscarUsuarioPeloId(req.params.id)
+        .then(resultado => {
+            res.json(resultado);
+        }).catch(err => {
+            res.status(500).send(err);
+        });
+}
+
+function avisos(req, res) {
+    usuarioModel.avisos(req.params.id)
     .then(resultado => {
-      res.json(resultado);
+        res.json(resultado);
     }).catch(err => {
-      res.status(500).send(err);
+        res.status(500).send(err);
     });
-  }
-  
+}
+
 
 module.exports = {
     autenticar,
     cadastrar,
     salvar,
-    buscarUsuarioPeloId
+    buscarUsuarioPeloId,
+    avisos
 }

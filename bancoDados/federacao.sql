@@ -39,6 +39,7 @@ foreign key (fkFed) references federacao(idFed)
 create table arquivo (
 idArquivo int primary key auto_increment,
 fkUpa int,
+ano int,
 arquivo varchar(255),
 foreign key(fkUpa) references upa (idUpa)
 );
@@ -49,6 +50,14 @@ insert into federacao(email,senha, fkTesouraria) values ('federacaoSA@gmail.com'
 select * from federacao;
 
 select * from upa;
+select * from arquivo;
+insert into arquivo values (null, 1, 2023, null);
+update upa set aviso = null where idUpa = 1;
+update upa set aviso = "Você ainda não entregou o relatório" where idUpa = 1;
+
+
+
+
 
 
 insert into upa (email,senha) values ('itapuan@gmail.com', '12345');

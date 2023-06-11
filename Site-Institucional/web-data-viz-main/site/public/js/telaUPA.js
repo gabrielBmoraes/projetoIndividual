@@ -1,15 +1,39 @@
+fetch(`/usuarios/avisos`, {
+  method: "GET"
+})
+  .then(res => {
+    res.json().then(json => {
+      const avisos = json[0];
+      console.log(json[0])
+
+      if (avisos.aviso == null) {
+        console.log("aviso")
+        avisos.aviso = "nenhum aviso foi encontrado :)"
+      }
+      div_avisoMensagem.innerHTML = ` <b>${avisos.aviso}</b>`
+    })
+  })
+  .catch(err => {
+    console.log(err);
+  })
+
+
+
+
+
+
 function enviar() {
   const formData = new FormData();
   formData.append('foto', foto.files[0])
-  formData.append('nome', nome.value)
-  formData.append('email', email.value)
+  formData.append('ano', ano.value)
 
   fetch("/usuarios/cadastro", {
     method: "POST",
     body: formData
   })
     .then(res => {
-      console.log ("entrei no then")
+      div_status.innerHTML = 'Concluido'
+      div_status.style = 'background-color: green'
       // setTimeout(() => {
       //   window.location = "./perfil.html"
       // }, 000);
