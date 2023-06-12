@@ -7,7 +7,6 @@ fetch(`/usuarios/avisos`, {
       console.log(json[0])
 
       if (avisos.aviso == null) {
-        console.log("aviso")
         avisos.aviso = "nenhum aviso foi encontrado :)"
       }
       div_avisoMensagem.innerHTML = ` <b>${avisos.aviso}</b>`

@@ -5,36 +5,114 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tela User</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="stylesheet" href="css/foother.css">
 </head>
 
-<body>
-  <input type="number" id="buscaInput">
-  <button onclick="buscarPeloId()">Buscar</button>
-  <div id="container">
 
+
+<body>
+
+
+  <div id="cabecalho" class="header">
+    <ul>
+      <a href="index.html"><img src="img/UPA-Logotipo-Oficial.png"></a>
+      <a href="acessar.html"><img src="img/sair.png"></a>
+    </ul>
+  </div>
+  <div class="container">
+    <div>
+      <h1><b>Emitir alerta</b></h1>
+      <div id="containerAlerta">
+        <div>
+          Destinatário: <input placeholder="Insira o id">
+        </div>
+        <textarea placeholder="Digite um aviso"></textarea>
+        <div>
+          <button class="botao">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <h1>Downloads:</h1>
+
+  </div>
+  <div id="div_download">
+    <ul class="listaDonwload">
+      <li><a href="download/Hino da UPA - Anunciar no Brasil - Playback.mp3" download="">Hino da UPA</a></li>
+      <li><a href="download/UPA-Hino-da-UPA-Anunciar-no-Brasil-Cifra.pdf" download="">Hino da UPA (Cifra)</a></li>
+      <li><a href="download/UPA-Logotipo-Oficial (1).png">Logo da UPA</a></li>
+    </ul>
+    <ul class="listaDonwload">
+      <li><a href="download/DNA-DIA-NACIONAL-DOS-ADOLESCENTES.pdf">DNA</a></li>
+      <li><a href="download/UPA-GTSI-Guia-de-Trabalho-das-Sociedades-Internas.pdf">GTSI</a></li>
+      <li><a href="download/Modelo-de-relatorio-geral-e-estatisco-UPA-local.docx">Relatório Final</a></li>
+    </ul>
+  </div>
+   
+  <h1>Consultar documentos:</h1>
+  <div id="documentacao">
+    <div>
+
+      <ul class="docHeader">
+        <input type="number" id="buscaInput" placeholder="Insira o id">
+        <button onclick="buscarPeloId()" class="botao">Procurar</button>
+      </ul>
+      <div id="containerDoc"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <div id="containerFormulario">
+    <div id="div_formulario">
+      <h1>Formulário (anual)</h1>
+      <div class="infoFormulario">
+        <h2>Numero de atividades: </h2> <input type="text" id="ipt_nAtividades">
+      </div>
+      <div class="infoFormulario">
+        <h2>Quantidade de sócios: </h2> <input type="text" id="ipt_nSocio">
+      </div>
+      <div class="infoFormulario">
+        <h2>Pergunta random: </h2> <input type="text" id="ipt_nRandom">
+      </div>
+      <div class="infoFormulario">
+        <h2>Sócios entre 12-15 anos: </h2> <input type="text" id="ipt_nJuvenil" placeholder="Quantidade">
+      </div>
+      <div class="infoFormulario">
+        <h2>Sócios entre 15-17 anos: </h2> <input type="text" id="ipt_nJovem" placeholder="Quantidade">
+      </div>
+      <div class="infoFormulario">
+        <h2>Sócios com 18 anos: </h2> <input type="text" id="ipt_nAdulto" placeholder="Quantidade">
+      </div>
+      <div id="div_button">
+        <button onclick="enviar()">ENVIAR</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="div_foother">
+    <h1>Federação da União de UPAs de Santo André</h1>
+
+
+    <div id="div_linha">
+      <a href=""><img src="img/UPA-Logotipo-Branco.png"></a>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li>|</li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li>|</li>
+        <li><a href="acessar.html">Acessar</a></li>
+      </ul>
+      <a href=""><img src="img/iconeInstagram (2).png"></a>
+    </div>
   </div>
 </body>
 
 </html>
 
-<script>
-  function buscarPeloId() {
-    fetch(`/usuarios/${buscaInput.value}`, {
-      method: "GET"
-    })
-      .then(res => {
-        res.json().then(json => {
-          const usuario = json[0];
-          console.log(json[0])
-          container.innerHTML = `<div>
-    <h1>${usuario.ano} </h1>
-    <img src='assets/${usuario.arquivo}' alt="Relatório">
-  </div>`
-        })
-      })
-      .catch(err => {
-        console.log(err);
-      })
-  }
-</script>
+<script src="js/perfil.js"></script>

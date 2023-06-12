@@ -1,0 +1,249 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    /* position: fixed; */
+    background-color: white;
+    border-bottom: 1px black solid;
+}
+
+.header img {   
+    width: auto;
+    height: 80px;
+    margin: 10px;
+}
+
+
+.header ul {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+h1{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+
+#containerAlerta{
+    margin-left: 70px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.botao {
+    width: 100px;
+    border-radius: 40px;
+    padding: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#containerAlerta textarea{
+    width: 500px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+#div_avisoMensagem {
+    padding: 10px;
+}
+
+
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    
+}
+
+
+.listaDonwload{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#div_download li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    padding: 10px;
+    width: 200px;
+}
+
+#div_download li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#documentacao {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 6%;
+
+}
+
+#documentacao li{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.docHeader{
+    display: flex;
+    justify-content: space-around;
+    background-color: #262626;
+    color: white;
+    padding: 10px;
+    width: 500px;
+    align-items: center;
+}
+
+.docComFundo{
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #5c5c5c;
+    color: white;
+    padding: 10px;
+    width: 1000px;
+}
+
+.docComFundo li{
+    width: 200px;
+}
+
+
+.docSemFundo{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    padding: 10px;
+    width: 1000px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.pendente{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.concluido{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+
+}
+
+#div_duvida {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#div_duvida a {
+    margin: 0;
+    color: red;
+}
+
+
+#containerDoc{
+    display: flex;
+    width: 200px;
+    padding: 10px;
+}
+
+#containerDoc h1{
+    margin: 0;
+}
+
+#containerDoc img{
+    width: 1000px;
+}
+
+#anoDoc{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+
+
+
+#containerFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div_formulario{
+    margin-top: 100px;
+    margin-right: 0;
+    width: 80%;
+    height: 500px;
+    background-color: #262626;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div_formulario h1{
+    color: white;   
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.infoFormulario {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    color: white;
+}
+#div_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#div_button button{
+    color: white;
+    background-color: red;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
