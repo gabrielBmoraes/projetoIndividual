@@ -18,17 +18,17 @@ function buscarAquariosPorUsuario(req, res) {
 
 
 function cadastrar(req, res) {
-  var descricao = req.body.descricao;
-  var idUsuario = req.body.idUsuario;
+  var Atividade = req.body.nAtividadeServer;
+  var Socio = req.body.nSocioServer;
+  var Homem = req.body.nHomemServer;
+  var Mulher = req.body.nMulherServer;
+  var Juvenil = req.body.nJuvenilServer;
+  var Jovem = req.body.nJovemServer;
+  var Adulto = req.body.nAdultoServer;
 
-  if (descricao == undefined) {
-    res.status(400).send("descricao está undefined!");
-  } else if (idUsuario == undefined) {
-    res.status(400).send("idUsuario está undefined!");
-  } else {
 
 
-    aquarioModel.cadastrar(descricao, idUsuario)
+    aquarioModel.cadastrar(Atividade, Socio, Homem, Mulher, Juvenil, Jovem, Adulto)
       .then((resultado) => {
         res.status(201).json(resultado);
       }
@@ -41,7 +41,7 @@ function cadastrar(req, res) {
         res.status(500).json(erro.sqlMessage);
       });
   }
-}
+
 
 module.exports = {
   buscarAquariosPorUsuario,

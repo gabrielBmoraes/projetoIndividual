@@ -11,12 +11,16 @@ function cadastrar() {
     var emailVar = email;
     var senhaVar = senha;
 
+
     validar(email, senha, conferirSenha, codigo, erroCadastro)
 
-    if (erroCadastro == false) {
-        console.log(erroCadastro)
+    if (erroCadastro) {
+        return false;
+    } else {
+
+
         // Enviando o valor da nova input
-        fetch("/usuarios/cadastrar", {
+        fetch("./aquario/cadastrar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -46,13 +50,10 @@ function cadastrar() {
             console.log(`#ERRO: ${resposta}`);
         });
 
-        return false;
-
-
-    }
-
+    } 
 
 }
+
 
 function validar(email, senha, conferirSenha, codigo, erroCadastro) {
     if (email == "") {
@@ -78,7 +79,7 @@ function validar(email, senha, conferirSenha, codigo, erroCadastro) {
         ipt_codigo.style = 'border-color: red'
         vCodigo.style.display = 'block';
     }
-    
+
     console.log(erroCadastro)
 }
 

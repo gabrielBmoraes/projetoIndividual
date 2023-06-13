@@ -84,10 +84,10 @@
 
             <div class="container">
                 <div>
-                    <h1 class="textoFundo">Número de atividades/mês</h1>
+                    <h1 class="textoFundo">Número de atividades totais</h1>
                 </div>
                 <div>
-                    <h1 class="textoFundo">Quantidade de sócios/ano</h1>
+                    <h1 class="textoFundo">Quantidade de sócios</h1>
                 </div>
             </div>
 
@@ -104,7 +104,7 @@
 
         <div class="container">
             <div>
-                <h1 class="textoFundo">Número de atividades/mês</h1>
+                <h1 class="textoFundo">Relação por sexo</h1>
             </div>
             <div>
                 <h1 class="textoFundo">Idade dos sócios</h1>
@@ -282,11 +282,11 @@
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
             datasets: [{
                 axis: 'y',
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 60, 3],
+                label: 'Atividades',
+                data: [],
                 borderWidth: 1
             }]
         },
@@ -300,6 +300,7 @@
 
             }
         }
+        
     });
 
 
@@ -309,10 +310,10 @@
     new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 60, 3],
+                label: 'Sócios',
+                data: [20,30,40],
                 borderWidth: 1
             }]
         },
@@ -323,28 +324,25 @@
                 }
             }
         }
+        
     });
 
     const ctx3 = document.getElementById('myChart3');
     new Chart(ctx3, {
         type: 'line',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
             datasets: [{
                 label: 'Homem',
-                data: [12, 19, 3, 5, 60, 3],
+                data: [15,16,18],
+                borderWidth: 1
+            },
+            {
+                label: 'Mulher',
+                data: [18,22,16],
                 borderWidth: 1
             }],
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: 'Mulher',
-                data: [11, 18, 2, 3, 40, 13],
-                borderWidth: 2
-            }]
         },
-
-
-
         options: {
             scales: {
                 y: {
@@ -352,6 +350,7 @@
                 }
             }
         }
+     
     });
 
     const ctx4 = document.getElementById('myChart4');
@@ -361,7 +360,7 @@
             labels: ['12-15', '15-17', '18'],
             datasets: [{
                 label: '# of Votes',
-                data: [12, 19, 3],
+                data: [12,14,20],
                 borderWidth: 1
             }]
         },

@@ -8,9 +8,9 @@ function buscarAquariosPorUsuario(idUsuario) {
   return database.executar(instrucaoSql);
 }
 
-function cadastrar(idUsuario, descricao) {
+function cadastrar(Atividade, Socio, Homem, Mulher, Juvenil, Jovem, Adulto) {
   
-  instrucaoSql = `insert into (descricao, fk_usuario) aquario values (${descricao}, ${idUsuario})`;
+  instrucaoSql = `insert into () grafico values (${descricao}, ${idUsuario})`;
 
   console.log("Executando a instrução SQL: \n" + instrucaoSql);
   return database.executar(instrucaoSql);

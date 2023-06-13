@@ -24,17 +24,21 @@ foreign key(fkFed) references federacao(idFed)
 );
 
 
+
 create table grafico(
 idGrafico int primary key auto_increment,
+ano int,
 fkFed int,
 nAtividades int,
 nSocio int,
-nUndefined int,
+nHomem int,
+nMulher int,
 nJuvenil int,
 nJovem int,
 nAdulto int,
 foreign key (fkFed) references federacao(idFed)
 );
+
 
 create table arquivo (
 idArquivo int primary key auto_increment,
@@ -49,6 +53,7 @@ insert into federacao(email,senha, fkTesouraria) values ('federacaoSA@gmail.com'
 
 select * from federacao;
 
+select * from grafico;
 select * from upa;
 select * from arquivo;
 insert into arquivo values (null, 1, 2023, null);
