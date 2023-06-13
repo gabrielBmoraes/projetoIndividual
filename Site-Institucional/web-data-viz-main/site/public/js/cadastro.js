@@ -20,7 +20,7 @@ function cadastrar() {
 
 
         // Enviando o valor da nova input
-        fetch("./aquario/cadastrar", {
+        fetch("./usuarios/cadastrar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

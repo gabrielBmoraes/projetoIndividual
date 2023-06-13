@@ -1,14 +1,13 @@
 var express = require("express");
 var router = express.Router();
+var graficoController = require("../controllers/graficoController");
 
-var aquarioController = require("../controllers/graficoController");
-
-router.get("/:idUsuario", function (req, res) {
-  aquarioController.buscarAquariosPorUsuario(req, res);
+router.post("/dadosGraficos", function (req, res) {
+  graficoController.dadosGraficos(req, res);
 });
 
 router.post("/cadastrar", function (req, res) {
-  aquarioController.cadastrar(req, res);
+  graficoController.cadastrar(req, res);
 })
 
 module.exports = router;

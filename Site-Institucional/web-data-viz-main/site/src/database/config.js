@@ -5,11 +5,11 @@ var sql = require('mssql');
 // CONEXÃO DO MYSQL WORKBENCH
 var mySqlConfig = {
     host: "localhost",
-    database: "bancofederacao",
+    database: "bancoFederacao",
     user: "federacaoSA",
     password: "jesussave",
 };
-
+    
 function executar(instrucao) {
     // VERIFICA A VARIÁVEL DE AMBIENTE SETADA EM app.js
     if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {

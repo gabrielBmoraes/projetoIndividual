@@ -1,23 +1,19 @@
-var aquarioModel = require("../models/aquarioModel");
+var graficoModel = require("../models/graficoModel");
 
-function buscarAquariosPorUsuario(req, res) {
-  var idUsuario = req.params.idUsuario;
-
-  aquarioModel.buscarAquariosPorUsuario(idUsuario).then((resultado) => {
-    if (resultado.length > 0) {
-      res.status(200).json(resultado);
-    } else {
-      res.status(204).json([]);
-    }
-  }).catch(function (erro) {
-    console.log(erro);
-    console.log("Houve um erro ao buscar os aquarios: ", erro.sqlMessage);
-    res.status(500).json(erro.sqlMessage);
-  });
+function dadosGraficos(req, res) {
+  console.log(req.params.id);
+  graficoModel.dadosGraficos(req.params.id)
+      .then(resultado => {
+          res.json(resultado);
+      }).catch(err => {
+          res.status(500).send(err);
+      });
 }
 
 
+
 function cadastrar(req, res) {
+  var ano = req.body.anoServer;
   var Atividade = req.body.nAtividadeServer;
   var Socio = req.body.nSocioServer;
   var Homem = req.body.nHomemServer;
@@ -28,7 +24,7 @@ function cadastrar(req, res) {
 
 
 
-    aquarioModel.cadastrar(Atividade, Socio, Homem, Mulher, Juvenil, Jovem, Adulto)
+    graficoModel.cadastrar(ano,Atividade, Socio, Homem, Mulher, Juvenil, Jovem, Adulto)
       .then((resultado) => {
         res.status(201).json(resultado);
       }
@@ -44,6 +40,6 @@ function cadastrar(req, res) {
 
 
 module.exports = {
-  buscarAquariosPorUsuario,
+  dadosGraficos,
   cadastrar
 }

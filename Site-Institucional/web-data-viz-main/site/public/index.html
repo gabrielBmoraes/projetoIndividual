@@ -107,7 +107,7 @@
                 <h1 class="textoFundo">Relação por sexo</h1>
             </div>
             <div>
-                <h1 class="textoFundo">Idade dos sócios</h1>
+                <h1 class="textoFundo">Idade dos sócios (atual)</h1>
             </div>
         </div>
 
@@ -279,10 +279,10 @@
 <script>
 
     const ctx = document.getElementById('myChart');
-    new Chart(ctx, {
+    graficoAtividades = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+            labels: [],
             datasets: [{
                 axis: 'y',
                 label: 'Atividades',
@@ -300,20 +300,20 @@
 
             }
         }
-        
+
     });
 
 
 
 
     const ctx2 = document.getElementById('myChart2');
-    new Chart(ctx2, {
+    graficoSocios = new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+            labels: [],
             datasets: [{
                 label: 'Sócios',
-                data: [20,30,40],
+                data: [],
                 borderWidth: 1
             }]
         },
@@ -324,22 +324,22 @@
                 }
             }
         }
-        
+
     });
 
     const ctx3 = document.getElementById('myChart3');
-    new Chart(ctx3, {
+    graficoSexos = new Chart(ctx3, {
         type: 'line',
         data: {
-            labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+            labels: [],
             datasets: [{
                 label: 'Homem',
-                data: [15,16,18],
+                data: [],
                 borderWidth: 1
             },
             {
                 label: 'Mulher',
-                data: [18,22,16],
+                data: [],
                 borderWidth: 1
             }],
         },
@@ -350,18 +350,20 @@
                 }
             }
         }
-     
+
     });
 
     const ctx4 = document.getElementById('myChart4');
-    new Chart(ctx4, {
+    graficoIdades = new Chart(ctx4, {
         type: 'pie',
         data: {
             labels: ['12-15', '15-17', '18'],
             datasets: [{
                 label: '# of Votes',
-                data: [12,14,20],
-                borderWidth: 1
+                data: [],
+                borderWidth: 1,
+                backgroundColor: ['#ffa500','#FF0000', '#008000']
+                
             }]
         },
         options: {
@@ -371,6 +373,7 @@
                 }
             }
         }
+        
     });
 
 </script>

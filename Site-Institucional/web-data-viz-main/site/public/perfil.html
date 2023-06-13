@@ -27,11 +27,11 @@
       <h1><b>Emitir alerta</b></h1>
       <div id="containerAlerta">
         <div>
-          Destinatário: <input placeholder="Insira o id">
+          Destinatário: <input placeholder="Insira o id" id="ipt_idAviso">
         </div>
-        <textarea placeholder="Digite um aviso"></textarea>
+        <textarea placeholder="Digite um aviso" id="ipt_textoAviso"></textarea>
         <div>
-          <button class="botao">Enviar</button>
+          <button class="botao" onclick="enviarAviso()">Enviar</button>
         </div>
       </div>
     </div>
@@ -71,6 +71,9 @@
   <div id="containerFormulario">
     <div id="div_formulario">
       <h1>Formulário (anual)</h1>
+      <div class="infoFormulario">
+        <h2>Ano: </h2> <input type="text" id="ipt_ano">
+      </div>
       <div class="infoFormulario">
         <h2>Numero de atividades: </h2> <input type="text" id="ipt_nAtividades">
       </div>
