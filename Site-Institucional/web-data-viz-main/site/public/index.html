@@ -25,7 +25,7 @@
                     <option value="1">Sobre a IPB</option>
                     <option value="2">Sobre a UPA</option>
                 </select></li>
-            <li><select name="" id="">
+            <li><select name="" id="listasUpas" onchange="mudarUpa()">
                     <option selected disabled value="" class="centro">Nossas UPAs</option>
                     <option value="1">IPB - Betel</option>
                     <option value="2">IPB - Jardim Elba</option>
@@ -74,8 +74,6 @@
             </div>
             <div id="div_direita">
                 <img src="img/fotoUpa.jpeg">
-                <br>
-                <a href="https://upa.org.br/">Site oficial da UPA</a>
             </div>
         </div>
     </section>
@@ -104,7 +102,7 @@
 
         <div class="container">
             <div>
-                <h1 class="textoFundo">Relação por sexo</h1>
+                <h1 class="textoFundo">Relação de membros</h1>
             </div>
             <div>
                 <h1 class="textoFundo">Idade dos sócios (atual)</h1>
@@ -133,16 +131,16 @@
             <div class="div_diretoria" id="diretoria2023">
                 <ul>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>Presidente</b><br>Gabriel B. Moraes <br> vestdobranco@gmail.com</p>
+                        <img src="img/usuario.png">
+                        <p><b>Presidente</b><br>Gabriel B. de Moraes <br> gabriel@gmail.com</p>
                     </li>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>1ºSecretário</b><br>Nicolas</p>
+                        <img src="img/usuario.png">
+                        <p><b>1ºSecretário</b><br>Nicolas Silva Santos <br> nicolas@gmail.com</p>
                     </li>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>Secretário-executivo</b><br>Bianca</p>
+                        <img src="img/usuario.png">
+                        <p><b>Secretário-executivo</b><br>Bianca Almeida Oliveira <br> bianca@gmail.com</p>
 
                     </li>
 
@@ -151,24 +149,24 @@
                 <ul>
                     <li>
                         <img
-                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                        <p><b>Vice-presidente</b><br>Raissa</p>
+                            src="img/usuario.png">
+                        <p><b>Vice-presidente</b><br>Raissa Bespalec Daloia <br> raissa@gmail.com</p>
                     </li>
                     <li>
                         <img
-                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                        <p><b>2ºSecretário</b><br> Arthur</p>
+                            src="img/usuario.png">
+                        <p><b>2ºSecretário</b><br> Arthur Gomes Camargo <br> arthur@gmail.com </p>
                     </li>
                     <li>
                         <img
-                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                        <p><b>Tesoureiro</b><br>Ester</p>
+                            src="img/usuario.png">
+                        <p><b>Tesoureiro</b><br>Ester <br> Ester Pereira Ferreira <br> ester@gmail.com</p>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
+                        <img src="img/usuario.png">
+                        <p><b>Secretário-presbiterial</b><br>Fernando Abraão<br> fernando@gmail.com</p>
                     </li>
 
                 </ul>
@@ -178,16 +176,16 @@
             <div class="div_diretoria" id="diretoria2022">
                 <ul>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>Presidente</b><br>Raissa <br> vestdobranco@gmail.com</p>
+                        <img src="img/usuario.png">
+                        <p><b>Presidente</b><br>Gabriel Branco de Moraes <br> gabriel@gmail.com</p>
                     </li>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>1ºSecretário</b><br>Nicolas</p>
+                        <img src="img/usuario.png">
+                        <p><b>1ºSecretário</b><br>Ester Pereira Ferreira <br> ester@gmail.com </p>
                     </li>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>Secretário-executivo</b><br>Bianca</p>
+                        <img src="img/usuario.png">
+                        <p><b>Secretário-executivo</b><br>Fernando Abraão<br> fernando@gmail.com </p>
 
                     </li>
 
@@ -196,24 +194,24 @@
                 <ul>
                     <li>
                         <img
-                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                        <p><b>Vice-presidente</b><br>Raissa</p>
+                            src="img/usuario.png">
+                        <p><b>Vice-presidente</b><br>Beatriz Borges <br> beatriz@gmail.com</p>
                     </li>
                     <li>
                         <img
-                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                        <p><b>2ºSecretário</b><br> Arthur</p>
+                            src="img/usuario.png">
+                        <p><b>2ºSecretário</b><br> Raíssa Bespalec Daloia <br> raissa@gmail.com</p>
                     </li>
                     <li>
                         <img
-                            src="https://static.wikia.nocookie.net/naruto/images/e/e7/Sasuke_epi_319.png/revision/latest?cb=20130629210647&path-prefix=pt-br">
-                        <p><b>Tesoureiro</b><br>Ester</p>
+                            src="img/usuario.png">
+                        <p><b>Tesoureiro</b><br>Isabelli de Sousa Gomes <br> isabelli@gmail.com</p>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <img src="https://ovicio.com.br/wp-content/uploads/2023/01/20230107-naruto-jutsu-555x555.jpg">
-                        <p><b>Secretário-presbiterial</b><br>Gabriel B. Moraes</p>
+                        <img src="img/usuario.png">
+                        <p><b>Secretário-presbiterial</b><br>Fernando Abraão <br> fernando@gmail.com</p>
                     </li>
 
                 </ul>
@@ -264,7 +262,7 @@
                     <li>|</li>
                     <li><a href="acessar.html">Acessar</a></li>
                 </ul>
-                <a href=""><img src="img/iconeInstagram (2).png"></a>
+                <a href="https://www.instagram.com/upas.santoandre/"><img src="img/iconeInstagram (2).png"></a>
             </div>
         </div>
 

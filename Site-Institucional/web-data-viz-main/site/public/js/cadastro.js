@@ -50,7 +50,7 @@ function cadastrar() {
             console.log(`#ERRO: ${resposta}`);
         });
 
-    } 
+    }
 
 }
 

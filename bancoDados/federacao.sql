@@ -2,11 +2,6 @@ create database bancoFederacao;
 use bancoFederacao;
 
 
-create table tesouraria (
-idTesouraria int primary key auto_increment, 
-saldo decimal(6,2)
-);
-
 
 create table federacao (
 idFed int primary key auto_increment,
@@ -21,6 +16,14 @@ senha varchar(45),
 aviso varchar(45),
 fkFed int,
 foreign key(fkFed) references federacao(idFed)
+);
+
+create table contato(
+idContato int primary key auto_increment,
+nome varchar(45),
+email varchar(100),
+telefone char(11),
+mensagem varchar(250)
 );
 
 
@@ -49,26 +52,23 @@ foreign key(fkUpa) references upa (idUpa)
 );
 
 
-insert into federacao(email,senha, fkTesouraria) values ('federacaoSA@gmail.com','12345');
+insert into federacao(email,senha) values ('federacao@gmail.com','12345');
 
-select * from federacao;
+insert into grafico values 
+(null,2019, 1, 20, 90, 40, 60, 30, 40, 20), (null, 2020,1, 15, 60, 40, 20, 15, 20, 5),
+(null,2021, 1, 12, 70, 30, 50, 20, 40, 30), (null,2022, 1, 26, 95, 50, 45, 25, 50, 20);
 
-select * from grafico;
+
+-- truncate federacao;
+-- truncate grafico;
+-- truncate upa;
+
+
+
+ select * from federacao;
+-- select * from grafico;
 select * from upa;
-select * from arquivo;
-insert into arquivo values (null, 1, 2023, null);
-update upa set aviso = null where idUpa = 1;
-update upa set aviso = "Você ainda não entregou o relatório" where idUpa = 1;
-
-
-
-
-
-
-insert into upa (email,senha) values ('itapuan@gmail.com', '12345');
-
-insert into arquivo(arquivo) values ('loren');
-
+-- select * from arquivo;
 
 
 

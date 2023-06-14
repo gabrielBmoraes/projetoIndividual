@@ -1,4 +1,12 @@
+if (sessionStorage.ID_USUARIO != 1) {
+    window.location = 'acessar.html'
+}
+
+
+
 var erroValidar = false;
+
+
 
 function enviarAviso() {
     let idAviso = Number(ipt_idAviso.value);
@@ -19,7 +27,7 @@ function enviarAviso() {
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                 idAvisoServer: idAvisoVar,
-                textoAvisoServer: textoAviso
+                textoAvisoServer: textoAvisoVar
             })
         }).then(function (resposta) {
 
@@ -27,8 +35,9 @@ function enviarAviso() {
 
             if (resposta.ok) {
 
-
                 alert("Formulário cadastrado com sucesso!");
+                ipt_idAviso.value = '';
+                ipt_textoAviso.value = '';
 
             } else {
                 alert("Houve um erro ao tentar cadastrar os dados!");
@@ -85,6 +94,29 @@ function enviar() {
     if (returnErroValidar) {
         alert("Insira corretamente os dados!")
     } else {
+
+        ipt_ano.value = '';
+        ipt_nAtividades.value = '';
+        ipt_nSocio.value = '';
+        ipt_nHomem.value = '';
+        ipt_nMulher.value = '';
+        ipt_nJuvenil.value = '';
+        ipt_nJovem.value = '';
+        ipt_nAdulto.value = '';
+
+        ipt_ano.style = 'border-color: black'
+
+        ipt_nAtividades.style = 'border-color: black'
+        ipt_nSocio.style = 'border-color: black'
+        ipt_nHomem.style = 'border-color: black'
+        ipt_nMulher.style = 'border-color: black'
+        ipt_nJuvenil.style = 'border-color: black'
+        ipt_nJovem.style = 'border-color: black'
+        ipt_nAdulto.style = 'border-color: black'
+
+
+
+
 
         fetch("./grafico/cadastrar", {
             method: "POST",

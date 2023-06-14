@@ -1,18 +1,24 @@
-
-var erroLogin;
+ sessionStorage.ID_USUARIO = 0;
 
 function entrar() {
 
     var email = ipt_email.value;
     var senha = ipt_senha.value;
-    erroLogin = false;
     var emailVar = email;
     var senhaVar = senha;
 
-    validar(email, senha, erroLogin)
-
-    if (erroLogin == false) {
-
+    if (email =="" || senha =="") {
+        if (email == "") {
+           
+            ipt_email.style = 'border-color: red'
+            vEmail.style.display = 'block'
+        }
+        if (senha == "") {
+            
+            ipt_senha.style = 'border-color: red'
+            vSenha.style.display = 'block'
+        }
+    } else  { 
         console.log("FORM LOGIN: ", emailVar);
         console.log("FORM SENHA: ", senhaVar);
 
@@ -37,9 +43,18 @@ function entrar() {
                     console.log(JSON.stringify(json));
 
                     sessionStorage.EMAIL_USUARIO = json.email;
-                    sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.ID_USUARIO = json.idUpa;
 
-                    window.location = "telaUPA.html";
+                    if (json.idUpa == 1) {
+                        
+                        window.location = 'perfil.html'
+                    } else {
+                        console.log(json.idUpa)
+                        window.location = 'telaUPA.html'
+                    }
+
+                    //window.location = 'telaUPA.html'
+                
                 });
 
             } else {
@@ -55,20 +70,6 @@ function entrar() {
         })
 
         return false;
-    }
-
-}
-
-function validar(email, senha, erroLogin) {
-    if (email == "") {
-        erroLogin = true;
-        ipt_email.style = 'border-color: red'
-        vEmail.style.display = 'block'
-    }
-    if (senha == "") {
-        erroLogin = true;
-        ipt_senha.style = 'border-color: red'
-        vSenha.style.display = 'block'
     }
 
 }
